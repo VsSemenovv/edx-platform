@@ -37,7 +37,14 @@ course_mode_class = course_mode if course_mode else ''
                     </p>
                     <p style="border-bottom: 2px dotted gray; margin-bottom: 30px !important;" class="accomplishment-summary copy copy-lead">&nbsp;</p>
 
-                    <p style="" class="accomplishment-statement-detail copy copy-lead-middle">успешно прошел (-ла) курс подготовки экспертов Scratch-Олимпиады 2023 ROBBOSCRATCH</p>
+                    <p style="line-height: 0 !important; margin-bottom: 20px !important;" class="accomplishment-statement-detail copy copy-lead-middle">успешно прошел (-ла) курс подготовки экспертов Scratch-Олимпиады 2023</p>
+                    % if certificate_data:
+                        % for signatory in certificate_data.get('signatories', []):
+                            % if signatory.get('signature_image_path'):
+                                <span class="accomplishment-statement-detail copy copy-lead-middle">${signatory['title']}</span>
+                            % endif
+                        % endfor
+                    % endif
 
 
                 </div>

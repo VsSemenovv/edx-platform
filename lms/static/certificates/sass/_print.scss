@@ -35,7 +35,7 @@
   }
 
   %print-layout-wrapper {
-    padding: 0 !important;
+    //padding: 0 !important;
   }
 
   %print-rendering-section {
@@ -192,9 +192,11 @@
 
   .copy-lead-middle{
     font-size: 19.0px !important;
-    line-height: 1.0;
+    line-height: 0 !important;
     font-weight: 300 !important;
+
   }
+
 
   .copy.copy-large {
     font-size: rem(16);
@@ -223,8 +225,8 @@
 
   .accomplishment-statement-left{
 
-    margin:0 35% 0 35%;
-        text-align: center;
+    margin:0 16.2% 0 16.2%;
+    text-align: center;
   }
 
   .accomplishment-margin {
@@ -232,7 +234,7 @@
   }
 
   .accomplishment-rendering {
-    top: 0 !important;
+    //top: 0 !important;
     /* border: rem(1) solid $gray-back; */
     /* border-top: rem(2) solid $cert-base-color; */
     box-shadow: none;
@@ -270,7 +272,7 @@
 
     .accomplishment-summary,
     .accomplishment-statement-detail {
-      margin-bottom: map-get($spacing-vertical, mid-small);
+      //margin-bottom: map-get($spacing-vertical, mid-small);
       width: 150%;
       max-width: 150%;
       }
